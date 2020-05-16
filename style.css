@@ -123,6 +123,12 @@ form, label, .form-group, #emailHelp {
 /*             Portfolio         */
 /* ============================= */
 
+/* add padding L/R so each row that has pic, the 
+2 x sides edges fit nicely with Portfolio */
+#row-container {
+    padding-left:25px;
+    padding-right:17px;
+}
 
 #pfrow{
     /* normal view: grey around pic */
