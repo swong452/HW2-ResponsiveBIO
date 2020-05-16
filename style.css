@@ -1,0 +1,259 @@
+* {
+    /* border: 1px solid black; */
+    /* This bk colr cover the bottom part grey */
+    background-color: lightgrey;
+    box-sizing: border-box;
+}
+
+h2, p, .container-fluid {
+    background-color: white;
+}
+
+.navbar {
+    /* border: 1px solid brown; */
+    background-color: white;
+    line-height: 40px;
+    /* Create White space on NAV bar Left */
+    margin-left: 25px;
+    margin-right: 25px; 
+    /* Padding 0 remove navbar space on top */
+    padding:0;
+    border-bottom: 2px solid grey;
+}
+
+.navbar-brand {
+    font-family:"Times New Roman", 'Times New Roman', Times, serif;
+    font-size:40px;
+    color: goldenrod; 
+    background-color: rgb(170, 238, 170);
+    padding: 20px;
+}
+
+#navbarSupportedContent {
+    background-color: white;
+    /* Must use Block to cause nav items 
+    wrap down to next new line !! */
+    display: block;
+}
+
+.nav-item {
+    padding:10px;
+    background-color: white;
+}
+
+.row {
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: lightgray;
+}
+
+#row1 {
+    /* Add padding space so it can be 
+    colored grey right above "About Me" */
+    padding-top:40px;
+}
+
+#col1{
+    color: green;
+    background-color: white;
+}
+
+#col2 {
+    background-color: white;
+}
+
+#col1 h2 {
+    line-height: 100px;
+}
+
+#pic {
+    /* Set a default pic size first 250px */
+    width:250px;
+    /* To make pic responsive need max width
+    and height auto set */
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin-right:20px;
+}
+
+/* ======= Footer Specific CSS =========== */
+
+/* Note the use of vh instead of px 
+on min-height. this will make the footer 
+stay down , even when scroll bar appear. */
+#foot-container {
+    position: relative;
+    min-height: 75vh;
+}
+
+#footer {
+    padding-top: 10px;
+    background-color: rgb(125, 145, 125);
+    color: honeydew;
+    height: 50px;
+    text-align: center;
+    border-top: 2px dotted honeydew;
+    position: absolute;
+    /* Can use  bottom 0 to keep it down    
+    but already have fixed-bottom   */
+    /* bottom:0; */
+    width:100%;
+}
+
+/* ============================= */
+/*          FORM Specific        */
+/* ============================= */
+form, label, .form-group, #emailHelp {
+    background-color: white;
+}
+
+/* Create white space above Full Name to the line */
+.form-group {
+    margin-top:15px;
+}
+
+/* Create white space below submit button */
+.btn-primary {
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/*             Portfolio         */
+/* ============================= */
+
+
+#pfrow{
+    /* normal view: grey around pic */
+    background-color:white;
+    padding-top:30px;
+}
+
+#pfcontainer {
+    background-color: lightgray;
+}
+
+  /* Make the image to responsive */
+.image {
+    border: 1px solid green;
+    width:100%;
+    margin:2%;
+  }
+
+.image2 {
+    border: 1px solid green;
+    width: 46%;
+    margin:2%;
+  }
+ 
+/* Align the div content, which
+has 2 x pic, to center */
+.twopic {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    /* Set width 50% so at breakpoint 768px
+    two pic will next to each other. Else
+    it seems breakpoint 769px cause image
+    to take up whole width.*/
+    width:50%;
+    border: 15px solid white;
+}
+
+.onepic {
+    display: block;
+    justify-content: space-evenly;
+}
+
+h6 {
+    position: absolute;
+    bottom:3px;
+    width:100%;
+    text-align: center;
+    background-color: rgb(89, 133, 89);
+    line-height: 40px;
+    color:white;
+}
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 640px) {
+    body {
+      background-color:white;
+      color: black;
+    }
+
+    #pic {
+        width:100%;
+    }
+
+    .navbar {
+        margin:0;
+        border-bottom: 2px solid grey;
+    }
+
+    .navbar-brand {
+        width:100%;
+        text-align: center;
+        /* when smaller size, make no margin */
+        margin:0;
+    }
+
+    #navbar-nav {
+        /* Need to set display flex to cause
+        nav items flow in horizontal direction */
+        display: flex;
+        flex-direction: row;
+        /* nav items have white color all the
+        way to the right if margin right 100% */
+        margin-right:100%;
+    }
+
+    /* Making Flex-basis and flex-grow to 0, 
+    when size shrink, will make nav-items go 
+    to the default center position */
+    #navbarSupportedContent {
+        flex-basis: 0%;
+        flex-grow:0;
+    }
+
+    /* When small screen, make the nav item
+    looks more evenly spaced */
+    .nav-item {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* At px640, force the nav bar to overflow
+    to next line */
+    #customnav {
+        display:block;
+    }
+
+    /* ============================================ */
+    /*  BELOW IS FOR PORTFOLIO CUSTOMIZED */
+
+    /* Make the div twopic as block so when size
+    shrink, force the 2nd pic down */
+    .twopic {
+        /* display: block; */
+    }
+
+    .image, .image2 {
+        width:80%;
+    }
+
+    /* After smaller screen , default bootstrap
+    breakpoint reached and changed the display behavor
+    hence, restate here how the pic should
+    be displayed */
+    .twopic {
+        /* display: flex; */
+        display: inline-block;
+        justify-content: space-evenly;
+        position: relative;
+        width: 100%;
+    }
+
+}

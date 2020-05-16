@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bio Bootstrap Wireframe</title>
+
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!-- Use expand-sm, not expand-lg; else , smaller screen will have brand
+        start in middle, and right side items disappear. so use sm -->
+        <nav class="navbar navbar-expand-sm navbar-light" id="customnav">
+
+            <a class="navbar-brand" href="index.html"> Gandalf The Grey </a>
+                            
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                <!-- To Align Items to the right: ml-auto -->
+                <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
+                <ul class="navbar-nav ml-auto" id="navbar-nav">
+
+                    <!-- First button: Default to Home , thus use Active -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <!-- Another Button: Portfolio-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <!-- Another Button: Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div> 
+        </nav>
+
+    
+
+        <!-- Question: use only container seem stretch the pic inside less
+            but without "container-fluid" image size jump up by quantum -->
+        <div class="container-fluid" id="pfcontainer" >
+
+            <!-- 1st row: Portfolio -->
+            <div class="row" id="row1">
+                <div class="col-md-7" id="col1">
+                    <h2> Portfoilo </h2>
+                    <div style="border-bottom: 1px solid black;"></div>
+                </div>
+            </div>
+
+        
+            <!-- Picture 1,2 First Row-->
+            <div class="col-md-7">
+                <div class="row" id="pfrow">
+                    <!-- <div class="col-md-7 twopic" id="col2">    -->
+                    <div class="col-md-6 twopic" id="col2">   
+                        <!-- <img src="Gandalf.jpg" alt="G1" class="img-fluid" width="150px" height="150px"> -->
+                        <img src="Gandalf.jpg" alt="G1" class="img-fluid" id="pic">
+                        <h6> Gandalf 1 </h6>
+                    </div>
+
+                    <div class="col-md-6 twopic" id="col2">   
+                        <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                        <img src="Gandalf.jpg" alt="G1" class="img-fluid" id="pic">
+                        <h6> Gandalf 2 </h6>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Picture 3,4 Second Row-->
+            <div class="col-md-7">
+                <div class="row" id="pfrow">
+                    <!-- <div class="col-md-7 twopic" id="col2">    -->
+                    <div class="col-md-6 twopic" id="col2">   
+                        <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                        <img src="Gandalf.jpg" alt="G1" class="img-fluid" id="pic">
+                        <h6> Gandalf 3 </h6>
+                    </div>
+
+                    <div class="col-md-6 twopic" id="col2">   
+                        <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                        <img src="Gandalf.jpg" alt="G1" class="img-fluid" id="pic">
+                        <h6> Gandalf 4 </h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Picture 5 third Row-->
+            <div class="col-md-7">
+                <div class="row" id="pfrow">
+                    <!-- <div class="col-md-7 twopic" id="col2">    -->
+                    <div class="col-md-6 twopic" id="col2">   
+                        <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                        <img src="Gandalf.jpg" alt="G1" class="img-fluid" id="pic">
+                        <h6> Gandalf 5 </h6>
+                    </div>
+
+                    <div class="col-md-6 twopic" id="col2"></div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+    <div id="foot-container">
+        <footer><p class="container-fluid footer fixed-bottom" id="footer"> Copyright 2020 </p></footer>
+    </div>
+
+</html>
