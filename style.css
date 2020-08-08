@@ -263,3 +263,85 @@ h6 {
     }
 
 }
+
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio-item-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  
+  }
+  .portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+   
+  }
+  /* Need to be more specific with selector */
+  
+  .img-text-wrapper .subtitle {
+    transition: 0.5s;
+    font-weight: 600;
+    color: transparent;
+    font-size: 30px;
+  }
+  .img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: rgb(88, 66, 211);
+    font-size: 30x;
+  }
+  .img-darken {
+    transition: 0.5s;
+    filter: brightness(10%);
+  }
+  /* contact page*/
+  #exampleInputMessage {
+    height: 35px;
+  }
+  /* custom styling for specific icons */
+  .social-icons {
+    padding-left: 100px;
+    flex-wrap: nowrap;
+  }
+  .fa-github {
+    color: black;
+  }
+  .fa-linkedin-in {
+    color: #2f22a1;
+  }
+  .fa-instagram {
+    color: rgb(151, 28, 28);
+  }
+  .fa-facebook {
+    color: rgb(19, 72, 179);
+  }
+  .fa-file-user {
+    color: black;
+  }
+  .fa-spin-hover:hover {
+    animation: fa-spin 2s infinite linear;
+  }
