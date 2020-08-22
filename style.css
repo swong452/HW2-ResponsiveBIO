@@ -345,3 +345,12 @@ h6 {
   .fa-spin-hover:hover {
     animation: fa-spin 2s infinite linear;
   }
+
+/* Social Media button */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    font-size: 50px;
+    margin:10px;
+    padding:5px;
+  }
