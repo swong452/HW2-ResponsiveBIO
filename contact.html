@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <title>Bio Bootstrap Wireframe</title>
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Use expand-sm, not expand-lg; else , smaller screen will have brand
@@ -18,7 +22,7 @@
     <nav class="navbar navbar-expand-sm navbar-light" id="customnav">
 
         <a class="navbar-brand" href="index.html"> Gandalf The Grey </a>
-                        
+
         <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
             <!-- To Align Items to the right: ml-auto -->
             <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
@@ -34,15 +38,26 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
 
+                <!-- Resume Link-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./SamsonWong_NetworkSiteReliabilityEngineer.docx"> Resume </a>
+                </li>
+
+
                 <!-- Another Button: Contact -->
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/samson-wong-45a25317/" class="fa fa-linkedin"></a>
+                </li>
+
             </ul>
-        </div> 
+        </div>
     </nav>
 
-  
+
 
     <!-- Responsive class "container-fluid" will allow stretc what is available in screen  -->
     <div class="container-fluid">
@@ -56,47 +71,53 @@
         </div>
 
         <!-- 2nd Row -->
-        <div class="row" >
+        <div class="row">
             <div class="col-md-7" id="col2">
                 <!-- Contact Form -->
-                
+
                 <form>
                     <!-- Form Group Class does all the magic when combined with form control -->
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name"                        
-                         placeholder="Gandalf The Grey">
+                        <input type="text" class="form-control" id="name" placeholder="Gandalf The Grey">
                     </div>
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email Address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
 
-                    <div class="form-group">        
+                    <div class="form-group">
                         <label for="name">Message</label>
-                           <textarea            
-                               class="form-control"            
-                               rows="3"            
-                               id="message">        
-                           </textarea>     
-                      </div>
-                    
+                        <textarea class="form-control" rows="3" id="message">
+                           </textarea>
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                
+                </form>
+
             </div>
         </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 <div id="foot-container">
-    <footer><p class="footer fixed-bottom" id="footer"> Copyright 2020 </p></footer>
+    <footer>
+        <p class="footer fixed-bottom" id="footer"> Copyright 2020 </p>
+    </footer>
 </div>
 
 </html>
